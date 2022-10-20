@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>La palabra ingresada invertida es : <span id="demo"></span></p>
+    <script>
+        //Escribir una función que reciba un texto y lo devuelva al revés.
+        var text = prompt("Ingrese una palabra");
+        let textoinver = invertirCadena(text)
+        function invertirCadena(texto){
+            let resultado = ' ';
+            for(let i = texto.length -1; i >= 0; --i){
+                resultado += texto[i];
+            }
+            return resultado;
+        }
+        document.getElementById("demo").innerHTML = textoinver;
+    </script>
+</body>
+</html>

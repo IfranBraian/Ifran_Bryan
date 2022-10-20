@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>El texto con mayor letra es : <span id="demo1"></span></p>
+    <p>Elementos de menor a mayor por cantidad de letra es : <span id="demo2"></span></p>
+    <p>El resultado de las 4 operaciones matemáticas :</p>
+    <p>Suma = <span id="demo3"></span></p>
+    <p>Resta = <span id="demo4"></span></p>
+    <p>Multiplicación = <span id="demo5"></span></p>
+    <p>División = <span id="demo6"></span></p>
+    <script>
+        /*
+        1. Determinar cuál de los elementos de texto es mayor, es decir, el que contenga más letras.
+        2. Imprimir los elementos de menor a mayor cantidad de letras.
+        3. Determinar el resultado de las cuatro operaciones matemáticas realizadas con los dos
+        elementos numéricos.
+        */
+        var valores = ["verdadero", "false", 2, "hola",
+            "mundo", 3, "char"];
+        var nuevaCadena = []
+        valores.forEach((texto) => {
+            if (typeof texto == "string") {
+                nuevaCadena.push(texto);
+            }
+        })
+        document.getElementById("demo1").innerHTML = nuevaCadena[0];
+
+        for (let i = 0; i < nuevaCadena.length; i++) {
+            for (let r = i + 1; r < nuevaCadena.length; r++) {
+                if (nuevaCadena[i].length > nuevaCadena[r].length) {
+                    let temp = nuevaCadena[i];
+                    nuevaCadena[i] = nuevaCadena[r];
+                    nuevaCadena[r] = temp;
+                }
+
+            }
+        }
+        document.getElementById("demo2").innerHTML = nuevaCadena;
+
+        let num1 = valores[2];
+        let num2 = valores[5];
+        let sum = num1 + num2;
+        let res = num1 - num2;
+        let mul = num1 * num2;
+        let div = num1 / num2;
+        document.getElementById("demo3").innerHTML = sum;
+        document.getElementById("demo4").innerHTML = res;
+        document.getElementById("demo5").innerHTML = mul;
+        document.getElementById("demo6").innerHTML = div;
+    </script>
+
+</body>
+
+</html>

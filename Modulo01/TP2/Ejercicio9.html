@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <!--
+        Crear un programa que recibe las notas de un alumno, todos los números deben ser naturales
+        <11. Debe calcular el promedio. Por último imprimir en pantalla si el valor de media es < 5
+        “Reprobado”, entre 6 y 8 “Aprobado” y si es mayor a 8 “Sobresaliente”
+    -->
+  <h2>Promedios de un alumno</h2>
+  <p>Nota 1 : <input type="text" id="n1"></p>
+  <p>Nota 2 : <input type="text" id="n2"></p>
+  <p>Nota 3 : <input type="text" id="n3"></p>
+  <p><input type="button" value="Calcular" onclick="calcularPromedio()"></p>
+  <p id="promedio"></p>
+</body>
+<script>
+ function calcularPromedio() {
+        var v1 = document.getElementById("n1").value;
+        var v2 = document.getElementById("n2").value;
+        var v3 = document.getElementById("n3").value;
+        var resprom = parseInt(v1) + parseInt(v2) + parseInt(v3);
+        var res = parseInt(resprom / 3)
+        document.getElementById("promedio").innerHTML = res;
+        if (res <= 10 && res > 0) {
+            if (res >= 8) {
+                alert("Sobresaliente!")
+            } else if (res < 8 && res >= 6) {
+                alert("Aprobado!")
+            } else if (res < 6) {
+                alert("Reprobado!")
+            }
+        }
+    }
+</script>
+</html>
