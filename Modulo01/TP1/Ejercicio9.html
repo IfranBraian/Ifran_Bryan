@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio9</title>
+</head>
+
+<body>
+    <p id="Array"></p>
+    <script>
+        var vocales = ["A", "E", "I", "O", "U"];
+        let voc = vocales.length;
+        let text = "<ul>";
+        for (let i = 0 ; i < voc; i++) {
+            text += "<li>" + vocales[i] + "</li>";
+        }
+        text += "</ul>";
+        document.getElementById("Array").innerHTML = text;
+    </script>
+</body>
+
+</html>
