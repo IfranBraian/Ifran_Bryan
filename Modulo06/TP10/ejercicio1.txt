@@ -1,0 +1,44 @@
+DOCTYPE : informa al navegador qué versión de HTML se usó para escribir el documento.
+          Es una declaración no una etiqueta.
+          Si no tienen una declaración de doctype, interpretarán la página en lo que se llama "quirks mode", un modo que procura maximizar la compatibilidad de la página con versiones anteriores del lenguaje HTML.
+
+Para que se utilizan las siguientes etiquetas:
+
+<head> </head> : provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos.
+
+<title> </title> : se utiliza para indicar el título del documento y se define como un elemento de contenido de cabecera. Esta etiqueta básicamente puede contener entidades de caracteres y textos, pero no contiene códigos.
+
+<meta> : proporcionan información valiosa sobre la página web, principalmente para ayudar a los motores de búsqueda a clasificarlas correctamente.
+
+<style> </style> : es el elemento encargado de indicar la información de estilo.
+
+<body> </body> : representa el contenido de un documento HTML. Solo puede haber un elemento <body> en un documento.
+
+<h1>,<h2>,<h3>,<h4>,<h5>,<h6> : estas etiquetas de título se emplean dentro de un sitio web para identificar los temas y subtemas de los que trata la página.
+
+<a> : crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.
+
+<strong> : es el apropiado para marcar con especial énfasis las partes más importantes de un texto. Crea una caja: en linea. Está definido como: Elemento de frase.
+
+<br> : produce un salto de línea en el texto. Es útil para escribir un poema o una dirección, donde la división de las líneas es significante. No utilices <br> para incrementar el espacio entre líneas de texto; para ello utiliza la propiedad margin de CSS o el elemento <p> .
+
+<ul> : "unordered list" lista no ordenada. Crea una lista no ordenada.
+
+<li> : el elemento li del ingles item list o elemento de lista declara cada uno de los elementos de una lista.
+
+<p> : es el apropiado para distribuir el texto en párrafos.
+
+<span> : sirve para aplicar estilo al texto o agrupar elementos en línea. Sus etiquetas son: <span> y </span> (ambas obligatorias). Está definido como: Elemento especial, y por lo tanto en línea.
+
+<table> </table> : encierra todas las filas y columnas de la tabla.
+
+<tr> </tr> : las etiquetas <tr> (del inglés "table row") definen cada fila de la tabla y encierran todas las columnas.
+
+<td> </td> : define la celda de una tabla que contiene datos. Esta participa en el modelo de tablas.
+
+<img> : representa una imagen en el documento. Los navegadores no siempre muestran la imagen a la que el elemento hace referencia.
+
+La etiqueta <script> puede ir dentro de las etiquetas de <body> o <head>, hay alguna
+diferencia donde pueda ir?
+
+ La diferencia que hay al agregar javascript al inicio consiste en que a veces alguna funcionalidad crítica de la página (o de tu negocio) depende de esos javascript, por ejemplo si pones google analytics al final, en el cierre del body y el usuario sale del sitio antes de terminar cargar la página entonces pierdes la data del usuario. Preload Scanning no evita completamente el bloqueo, su implementación cambia dependiendo del navegador, pero en términos básicos consiste en un light weight process que se levanta para seguir leyendo archivos css, imágenes u otros scripts cuando se topa con un script. Pero esta lectura es sólo de forma parcial, por lo que sigue siendo recomendado en muchos casos poner javascript al final.
