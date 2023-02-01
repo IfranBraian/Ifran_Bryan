@@ -1,0 +1,68 @@
+.titulo {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: darkblue;
+    border: 2px solid darkblue;
+    margin: 0px;
+}
+
+.imagen {
+    height: 50px;
+    vertical-align: middle;
+    position: absolute;
+    left: 20px;
+}
+.nav {
+    padding: 8px;
+    text-align: center;
+    background-color: #e4e4e4;
+}
+
+.enlace {
+    font-family: Georgia,serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+.enlace i {
+    width: 50px;
+    color: darkblue;
+}
+.inicio {
+    color: black;
+    margin: 0px;
+    text-align: left;
+}
+.rxr a {
+    text-decoration: none;
+    color:red;
+}
+h2 > i{
+    margin-right: 5px;
+}
+.crear > i{
+    margin-right: 5px;
+}
+.limpiar > i{
+    margin-right: 5px;
+}
+.tabla {
+    margin: 0 auto;
+    border: 1px solid;
+    width: 60%;
+    border-collapse: collapse;
+}
+.tabla th {
+    border: 1px solid;
+    border-collapse: collapse ;
+    background-color: #e4e4e4;
+}
+.tabla td {
+    border: 1px solid;
+    text-align: center;
+}
+.tabla td:hover {
+    background-color: rgb(255, 153, 0);
+    font-size: 20px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Silicon</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script src="https://kit.fontawesome.com/e33608a22c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 class="titulo">
+        <img href="https://siliconmisiones.gob.ar/" class="imagen" src="/img/silicon transparente.jpg"
+            alt="Logo de Silicon Misiones" title="Logo de Silicon Misiones">
+        Portal Silicon Full Stack
+    </h1>
+    <nav class="nav">
+        <a href="/persona/index.html" class="enlace"><i class="fa-sharp fa-solid fa-house-chimney-window"></i>Inicio</a>
+        <a href="/persona/personaForm.html" class="enlace"><i class="fa-solid fa-address-card"></i>Gestión de
+            Personas</a>
+        <a href="/persona/personaTabla.html" class="enlace"><i class="fa-solid fa-address-book"></i>Listar Personas</a>
+        <h2 class="inicio"><i class="fa-solid fa-address-card"></i>Gestión de Personas</h2>
+    </nav>
+    <hr>
+    <fieldset>
+        <legend>Datos personales:</legend>
+        <div>
+            <label for="dni">DNI</label><br>
+            <input type="number" id="dni" name="dni" min="0" max="99999999" required>
+        </div>
+        <div>
+            <label for="fname">Nombre</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Ingrese el nombre" required>
+        </div>
+        <div>
+            <label for="lname">Apellido:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Ingrese el apellido" required>
+        </div>
+        <hr>
+        <div>
+            <label>Sexo:</label><br>
+
+            <input type="radio" name="sexo" id="M" value="M">
+            <label for="M">Masculino</label><br>
+
+            <input type="radio" name="sexo" id="F" value="F">
+            <label for="F">Femenino</label><br>
+
+            <input type="radio" name="sexo" id="O" value="O">
+            <label for="O">Otro</label>
+        </div>
+        <div>
+            <br>
+            <label>Fecha de Nacimiento:</label><br>
+            <input type="date" id="fecnac" name="fecnac">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Datos de acceso</legend>
+        <div>
+            <label for="correo">Correo electronico:</label><br>
+            <input type="email" id="correo" name="correo">
+        </div>
+        <div>
+            <label for="pass">Contraseña:</label><br>
+            <input type="password" id="pass" name="pass">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Datos academicos</legend>
+        <div>
+            <label for="estudio">Nivel estudios:</label>
+            <select id="estudio" name="estudio">
+                <option value="pri">Primaria</option>
+                <option value="sec">Secundario</option>
+                <option value="ter" selected>Terciario</option>
+                <option value="uni" selected>Universitario</option>
+                <option value="pos" selected>Post Grado</option>
+            </select>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Acciones</legend>
+        <nav><button class="crear"><i class="fa-solid fa-plus"></i>Crear persona</button>
+            <button class="limpiar"><i class="fa-solid fa-minus"></i>Limpiar datos</button>
+        </nav>
+    </fieldset>
+
+</body>
+
+</html>
