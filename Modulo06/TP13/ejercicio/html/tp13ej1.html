@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="/ejercicio/normalize/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/ejercicio/css/letra.css">
+  <link rel="stylesheet" type="text/css" href="/ejercicio/css/submenu.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Portal Silicon</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-1" style="background-color: rgb(10, 19, 97);">
+        <img src="/ejercicio/html/img/silicon transparente.jpg" alt="Logo Silicon" style="height: 60px; width: 60px;">
+      </div>
+      <div class="col-sm" style="background-color: rgb(10, 19, 97);">
+        <h1 style="text-align: center; color: white;">Portal Silicon Full Stack</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col" style="background-color: #e4e4e4;">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-house icon"></i>Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-person icon"></i>Gestionar Personas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-pass icon"></i>Lista de Personas</a>
+          </li>
+        </ul>
+        <div class="col-3">
+          <h4>Gestión de Personas</h4>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <legend>Datos Personales :</legend>
+    <div class="row">
+      <div class="col-4">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">DNI</span>
+          <input type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">Apellido</span>
+          <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">Nombre</span>
+          <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        Sexo :
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Masculino
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Femenino
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Otro
+          </label>
+        </div>
+        <div>
+          <label>Fecha de Nacimiento:</label>
+          <br>
+          <input type="date" id="fecnac" name="fecnac">
+        </div>
+      </div>
+    </div>
+    <hr>
+    <legend>Datos de acceso :</legend>
+    <div class="row">
+      <div class="col-4">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+          <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="*******">
+        </div>
+      </div>
+    </div>
+    <hr>
+    <legend>Datos Académicos :</legend>
+    <div class="row">
+      <div class="col-4">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Nivel de Estudios</option>
+          <option value="1">Primario</option>
+          <option value="2">Secundario</option>
+          <option value="3">Terciario</option>
+          <option value="4">Universitario</option>
+          <option value="5">Grado</option>
+        </select>
+      </div>
+    </div>
+    <hr>
+    <legend>Acciones :</legend>
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-outline-primary">Crear Persona</button>
+        <button type="button" class="btn btn-outline-primary">Limpiar Datos</button>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
